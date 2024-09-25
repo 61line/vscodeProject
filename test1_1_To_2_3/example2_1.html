@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>MVVM应用模式</title>
+    </head>
+    <body>
+        <div id="vue21">
+            <h3>商品清单</h3>
+            <ol>
+                <li v-for="shopping in shoppings">{{shopping.name}}</li>
+            </ol>
+
+        </div>
+    </body>
+    <script src="../vue.js"></script>
+    <script>
+        var myModel = {
+            shoppings:[{name:'banana手机'},{name:'笔记本电脑'},{name:'bpad'}]
+        };
+        var myViewModel = new Vue({
+            el:'#vue21',
+            data:myModel
+        });
+    </script>
+</html>

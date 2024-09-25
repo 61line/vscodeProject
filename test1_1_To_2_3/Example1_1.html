@@ -1,0 +1,27 @@
+<!-- vue-1-1.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>调试Vue应用</title>
+        <script type="text/javascript" src="../vue.js"></script>
+    </head>
+    <body>
+        <div id="vue11">
+            <!--文本插值-->
+            {{msg}}
+        </div>
+        <script type="text/javascript">
+            //定义Vue实例，绑定数据到dom节点上
+            var myViewModel = new Vue(
+                {
+                    el:'#vue11',
+                    data:{
+                        msg:"我喜欢学习Vue.js"
+                    }
+                }
+            )
+
+        </script>
+    </body>
+</html>

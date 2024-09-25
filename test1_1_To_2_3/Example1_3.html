@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Vue选项的使用</title>
+
+        <style type="text/css">
+            .vue11 {text-align: center;border:1px solid red;width: auto;height: auto;}
+            .vue11 img{height: auto;}
+        </style>
+
+        <script type="text/javascript" src="../vue.js"></script>
+    </head>
+
+
+    <body>
+        <div id="vue13"></div>
+        <script type="text/javascript">
+            var myViewModel = new Vue(
+                {
+                    template:'<div v-bind:class="divstyle"><img v-bind:src="image"><h3>{{ bookname }}荣获2019年度清华大学出版社畅销图书</h3></div>',
+                    data:{
+                        bookname:'Web前端开发技术-HTML5、CSS3、Javascript',
+                        image:'logo.png',
+                        divstyle:'vue11'
+                    },
+                    el:'#vue13'
+                }
+            )
+        </script>
+    </body>
+
+    
+    </html>

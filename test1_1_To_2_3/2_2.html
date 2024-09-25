@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>数据的双向绑定与MVVM模式</title>
+    <script type="text/javascript" src="../vue.js"></script>
+    <style type="text/css">
+        fieldset {
+            width: 650px;
+            height: auto;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue22">
+        <fieldset>
+            <legend align="center">学生信息</legend>
+            姓名:<input type="text" v-model="name" placeholder="请输入姓名"><br />
+            班级:<input type="text" v-model="classname" placeholder="请输入班级"><br />
+            专业:<input type="text" v-model="specialty" placeholder="请输入专业"><br /><br />
+            <input type="submit" value="提交">
+            <input type="button" value="重置" @click="resetForm">
+            <h3>{{ specialty }}专业、{{ classname }}班级的{{ name }}同学，欢迎您！</h3>
+        </fieldset>
+    </div>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: '#vue22',
+            data: {
+                name: '刘翊航',
+                classname: '智工',
+                specialty: '2022级'
+            },
+            methods: {
+                resetForm() {
+                    this.name = '';
+                    this.classname = '';
+                    this.specialty = '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

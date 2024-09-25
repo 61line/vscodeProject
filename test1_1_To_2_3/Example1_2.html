@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>template标记与script标记结合使用</title>
+</head>
+<body>
+    <!--模板内容-->
+    <template id="myVueTemp">
+        <p>模板内容内容.再次点击...</p>
+    </template>
+    <!--普通内容-->
+    <div id="div1">
+        <p>普通内容</p>
+    </div>
+    <button onclick="useTemp();">使用模板加载内容</button>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function useTemp() {
+            var newTemp = $("myVueTemp").content.cloneNode(true);
+            // 向div中添加模板中的内容
+            $("div1").appendChild(newTemp); // 直接添加文档片段
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专家介绍 - 重庆医科大学附属第一医院</title>
+    <link rel="stylesheet" href="myCSS.css">
+    <style>
+        .expert {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .expert img {
+            width: 50px;
+            height: 50px; 
+            border-radius: 50%; 
+            margin-left: 10px; 
+        }
+    </style>
+</head>
+
+<div>
+    <img src="D:\vscodeProject\myphoto\logo.png" alt="这里是logo">
+</div>
+
+
+<div style="padding: 20px;">
+    <h1>专家介绍</h1>
+    <p>在这里，你可以找到我们医院各科室的专家介绍，包括他们的专业领域、研究方向和联系方式。</p>
+</div>
+
+
+<body>
+    <div class="navbar">
+        <a href="myHTML.html">首页</a>
+        <div class="dropdown">
+            <button class="dropbtn">预约挂号</button>
+            <div class="dropdown-content">
+                <a href="#appointment1">预约1</a>
+                <a href="#appointment2">预约2</a>
+                <a href="#appointment3">预约3</a>
+            </div>
+        </div>
+        <a href="myexprets.html">专家介绍</a>
+        <a href="#schedule">出诊信息</a>
+        <a href="#tips">检验检查须知</a>
+        <a href="#questions">常见问题</a>
+        <a href="#navigation">医院导航</a>
+    
+    
+        <!-- 搜索框和时间显示 -->
+        <div class="search-container" style="float: right; display: flex; align-items: center;">
+            <input type="text" placeholder="搜索..." id="searchInput" />
+            <span id="currentTime" style="color: white; padding-left: 10px;"></span>
+        </div>
+    </div>
+
+
+
+<!-- 专家列表示例 -->
+<div>
+    <h2>专家团队</h2>
+    <ul>
+        <li class="expert">
+            <strong>海绵医生</strong> - 心脏科主任<br>
+            研究方向：心血管疾病<br>
+            联系方式：123-456-7890
+            <img src="D:\vscodeProject\mycode\海绵医生.jpeg" alt="海绵医生的图片">
+        </li>
+        <li class="expert">
+            <strong>派星星医生</strong> - 神经科主任<br>
+            研究方向：神经系统疾病<br>
+            联系方式：123-456-7891
+            <img src="D:\vscodeProject\mycode\派星星医生.jpeg" alt="派星星医生的图片">
+        </li>
+        <li class="expert">
+            <strong>章鱼医生</strong> - 肿瘤科主任<br>
+            研究方向：肿瘤治疗与研究<br>
+            联系方式：123-456-7892
+            <img src="D:\vscodeProject\mycode\章鱼医生.jpeg" alt="章鱼医生的图片">
+        </li>
+    </ul>
+</div>
+
+<footer class="footer">
+    <div style="display: flex; justify-content: center;">
+        <img src="D:\vscodeProject\myphoto\CQMUlogo.png" 
+        alt="重庆医科大学附属第一医院" style="max-width: 30%;
+        height: auto; border-radius: 5px;">
+    </div>
+    <p>&copy; 2024 重庆医科大学附属第一医院. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
